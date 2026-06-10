@@ -156,7 +156,7 @@ export function KgaQuotation() {
         className="mt-8 text-xs text-muted-foreground/80"
       >
         Precios en pesos mexicanos. No incluyen IVA. Propuesta válida por 30
-        días naturales a partir de la fecha de envío.
+        días naturales a partir del 10 de junio de 2026.
       </motion.p>
     </section>
   );
