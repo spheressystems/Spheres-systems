@@ -84,7 +84,7 @@ export function KgaQuotation() {
           Presupuesto
         </h2>
         <p className="mt-4 text-pretty text-lg leading-relaxed text-muted-foreground">
-          Construida para que sepas exactamente en qué inviertes, qué recibes y
+          Construido para que sepas exactamente en qué inviertes, qué recibes y
           cuándo. Sin sorpresas y sin letra chica.
         </p>
       </motion.div>
