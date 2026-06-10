@@ -70,7 +70,6 @@ export default function RootLayout({
           defaultTheme="dark"
           enableSystem={false}
           themes={["light", "dark"]}
-          disableTransitionOnChange
         >
           {children}
           <Toaster richColors closeButton position="top-center" />

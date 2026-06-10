@@ -59,6 +59,39 @@ export function Theme({
     setMounted(true);
   }, []);
 
+  const applyTheme = React.useCallback(
+    (next: Theme) => {
+      if (typeof document === "undefined") {
+        setTheme(next);
+        return;
+      }
+      const reduceMotion = window.matchMedia(
+        "(prefers-reduced-motion: reduce)",
+      ).matches;
+      const supportsViewTransitions =
+        "startViewTransition" in document &&
+        typeof (
+          document as Document & {
+            startViewTransition?: (cb: () => void) => unknown;
+          }
+        ).startViewTransition === "function";
+
+      if (reduceMotion || !supportsViewTransitions) {
+        setTheme(next);
+        return;
+      }
+
+      (
+        document as Document & {
+          startViewTransition: (cb: () => void) => unknown;
+        }
+      ).startViewTransition(() => {
+        setTheme(next);
+      });
+    },
+    [setTheme],
+  );
+
   if (!mounted) {
     return (
       <span
@@ -96,7 +129,7 @@ export function Theme({
     return (
       <motion.button
         type="button"
-        onClick={() => setTheme(isLight ? "dark" : "light")}
+        onClick={() => applyTheme(isLight ? "dark" : "light")}
         aria-label={isLight ? "Activar tema oscuro" : "Activar tema claro"}
         className={cn(
           "relative inline-flex items-center rounded-full border-2 border-border bg-muted transition-colors",
@@ -136,7 +169,7 @@ export function Theme({
   return (
     <motion.button
       type="button"
-      onClick={() => setTheme(nextTheme)}
+      onClick={() => applyTheme(nextTheme)}
       aria-label={`Cambiar a tema ${themeLabels[nextTheme].toLowerCase()}`}
       className={cn(
         "inline-flex items-center justify-center gap-2 rounded-lg border transition-colors",
