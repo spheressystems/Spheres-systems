@@ -10,6 +10,7 @@ export const siteConfig = {
   nav: [
     { label: "Servicios", href: "/servicios" },
     { label: "Proceso", href: "/proceso" },
+    { label: "Proyectos", href: "/portafolio" },
     { label: "Contacto", href: "/contacto" },
   ],
   portalNav: [
