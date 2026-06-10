@@ -19,7 +19,7 @@ const stages: QuotationStage[] = [
     number: "01",
     icon: Compass,
     name: "Discovery",
-    price: "$50,000 MXN",
+    price: "$50,000 MXN + IVA",
     priceNote: "Pago único",
     description:
       "Nos sentamos contigo y tu equipo a mapear cada proceso real. Salimos con un blueprint operativo que define exactamente qué hay que eficientar y cómo.",
@@ -34,7 +34,7 @@ const stages: QuotationStage[] = [
     number: "02",
     icon: Wrench,
     name: "Desarrollo",
-    price: "$150,000 – $300,000 MXN",
+    price: "$150,000 – $300,000 MXN + IVA",
     priceNote: "Rango definido al cerrar Discovery",
     description:
       "Construcción completa del sistema: ERP multirramo conectado a las plataformas que ya usan, con IA embebida en cobranza, emisiones y operación.",
@@ -50,7 +50,7 @@ const stages: QuotationStage[] = [
     number: "03",
     icon: ShieldCheck,
     name: "Mantenimiento y servicio",
-    price: "$20,000 MXN",
+    price: "$20,000 MXN + IVA",
     priceNote: "Mensual",
     description:
       "El sistema sigue vivo. Monitoreamos servidores, atendemos incidencias y la IA sigue trabajando contigo todos los días.",
@@ -80,8 +80,8 @@ export function KgaQuotation() {
           </span>
           Propuesta económica — KGA
         </div>
-        <h2 className="text-balance font-serif text-4xl leading-tight tracking-tight text-foreground sm:text-5xl">
-          Una propuesta clara, en tres etapas.
+        <h2 className="text-balance font-serif text-5xl leading-tight tracking-tight text-foreground sm:text-6xl md:text-7xl">
+          Presupuesto
         </h2>
         <p className="mt-4 text-pretty text-lg leading-relaxed text-muted-foreground">
           Construida para que sepas exactamente en qué inviertes, qué recibes y

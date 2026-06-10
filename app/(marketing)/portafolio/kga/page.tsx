@@ -174,14 +174,6 @@ export default function KgaPage() {
                 seguir adelante.
               </p>
             </div>
-            <Button
-              render={<Link href="/contacto" />}
-              size="lg"
-              className="rounded-full px-7 shadow-lg shadow-primary/20"
-            >
-              Agendar Discovery
-              <ArrowRight className="ml-1 size-4" />
-            </Button>
           </div>
         </div>
       </section>
