@@ -27,19 +27,19 @@ const stages: QuotationStage[] = [
       "Sesiones con cada rol clave de la operación",
       "Mapeo de procesos actuales y puntos de fricción",
       "Definición de integraciones requeridas (compañías, plataformas)",
-      "Blueprint operativo + rango cerrado para la etapa de desarrollo",
+      "Blueprint operativo + rango cerrado para la etapa de Development",
     ],
   },
   {
     number: "02",
     icon: Wrench,
-    name: "Desarrollo",
+    name: "Development",
     price: "$150,000 – $300,000 MXN + IVA",
     priceNote: "Rango definido al cerrar Discovery",
     description:
-      "Construcción completa del sistema: ERP multirramo conectado a las plataformas que ya usan, con IA embebida en cobranza, emisiones y operación.",
+      "Construcción completa del sistema en un tiempo máximo de 6 meses: ERP multirramo conectado a las plataformas que ya usan, con IA embebida en cobranza, emisiones y operación.",
     includes: [
-      "Desarrollo del ERP multirramo a la medida",
+      "Desarrollo del ERP multirramo a la medida (máx. 6 meses)",
       "Integraciones con plataformas de compañías de seguros",
       "Asistente IA para cobranza, emisiones y seguimiento",
       "Compra y configuración del servidor productivo",
@@ -49,11 +49,11 @@ const stages: QuotationStage[] = [
   {
     number: "03",
     icon: ShieldCheck,
-    name: "Mantenimiento y servicio",
+    name: "Monthly fee",
     price: "$20,000 MXN + IVA",
-    priceNote: "Mensual",
+    priceNote: "Mensual (inicia con Development)",
     description:
-      "El sistema sigue vivo. Monitoreamos servidores, atendemos incidencias y la IA sigue trabajando contigo todos los días.",
+      "El sistema sigue vivo. Monitoreamos servidores, atendemos incidencias y la IA sigue trabajando contigo todos los días. El cobro de esta mensualidad inicia a partir del comienzo de Development.",
     includes: [
       "Operación y monitoreo del servidor",
       "Asistente IA siempre activo",
